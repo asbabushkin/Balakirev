@@ -46,7 +46,7 @@ def page_not_found_custom(request, exception):
 
 
 def index(request):
-    posts = Women.objects.filter(is_published=True)
+    posts = Women.objects.all()
     data = {
         "title": "Главная страница",
         "menu": menu,
