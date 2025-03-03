@@ -1,6 +1,6 @@
 from django import template
-import women.views as views
 
+import women.views as views
 
 register = template.Library()
 
