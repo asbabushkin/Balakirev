@@ -23,6 +23,7 @@ from women.views import page_not_found_custom
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("women/", include("women.urls")),
+    path("__debug__/", include("debug_toolbar.urls")),
 ]
 
 
