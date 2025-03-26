@@ -1,5 +1,5 @@
-from django.http import Http404, HttpResponse, HttpResponseNotFound
-from django.shortcuts import get_object_or_404, redirect, render
+from django.http import HttpResponse, HttpResponseNotFound
+from django.shortcuts import get_object_or_404, render
 
 from women.models import Category, TagPost, Women
 

@@ -29,5 +29,3 @@ urlpatterns = [
 
 # https://docs.djangoproject.com/en/4.2/ref/urls/#handler404
 handler404 = page_not_found_custom
-
-
