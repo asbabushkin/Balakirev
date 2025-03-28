@@ -25,6 +25,14 @@ class MarriedFilter(admin.SimpleListFilter):
 
 @admin.register(Women)
 class WomenAdmin(admin.ModelAdmin):
+# редактирование записи
+    fields = ["title", "content", "slug", "cat", "husband", "tags"]
+#    readonly_fields = ["slug"] нередактируемое в режиме редактирования поле
+    prepopulated_fields = {"slug": ("title", )}
+    filter_vertical = ["tags"]
+#    filter_horizontal = ["tags"]
+
+# отображение списков
     list_display = ("title", "time_create", "is_published", "cat", "brief_info")
     list_display_links = ("title",)
     ordering = ("time_create", "title")
